@@ -13,7 +13,6 @@ source:
 build:
   number: 0
   skip: true  # [ py27]
-  skip: true  # [ win]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,19 +22,19 @@ requirements:
   run:
     - python
     - dill
-    - itk
     - msgpack-numpy
     - msgpack-python
-    - networkx
     - numba
     - psutil
     - scipy
-    - simpleitk
-    - vtk
 
 test:
   requires:
+    - itk
     - nose
+    - networkx
+    - simpleitk
+    - vtk
   source_files:
     - test/*.py
   commands:
