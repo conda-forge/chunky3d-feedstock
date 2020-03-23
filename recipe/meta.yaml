@@ -11,8 +11,8 @@ source:
 
 
 build:
-  number: 0
-  skip: true  # [ py27]
+  noarch: python
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -33,12 +33,13 @@ test:
     - itk
     - nose
     - networkx
-    - simpleitk
+    - simpleitk  # [unix]
     - vtk
   source_files:
     - test/*.py
   commands:
-    - nosetests
+    - nosetests -e label  # [win]
+    - nosetests  # [unix]
 
 about:
   home: https://github.com/K3D-tools/chunky3d
