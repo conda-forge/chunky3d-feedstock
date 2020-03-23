@@ -38,8 +38,8 @@ test:
   source_files:
     - test/*.py
   commands:
-    - pip install simpleitk  # [win]
-    - nosetests
+    - nosetests -e label  # [win]
+    - nosetests  # [unix]
 
 about:
   home: https://github.com/K3D-tools/chunky3d
