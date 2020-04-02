@@ -38,6 +38,7 @@ test:
   source_files:
     - test/*.py
   commands:
+    - {{ PYTHON }} -m pip install itk-thickness3d
     - nosetests -e label  # [win]
     - nosetests  # [unix]
 
