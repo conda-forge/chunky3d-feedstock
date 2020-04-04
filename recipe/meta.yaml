@@ -31,8 +31,9 @@ requirements:
 test:
   requires:
     - itk
-    - nose
     - networkx
+    - nose
+    - pip
     - simpleitk  # [unix]
     - vtk
   source_files:
