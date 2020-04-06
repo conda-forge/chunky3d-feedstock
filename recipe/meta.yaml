@@ -1,5 +1,5 @@
 {% set name = "chunky3d" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 912ac315bfabdcdfd451b8e050fefe36705e5aa5fd6a6519ba14919f01ccbbca
+  sha256: c0099d131784e0b910b5769a2f77cd77419ba5e47f52ecbc8758331b4b7f98a0
 
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -31,15 +31,16 @@ requirements:
 test:
   requires:
     - itk
-    - nose
     - networkx
+    - nose
+    - pip
     - simpleitk  # [unix]
     - vtk
   source_files:
     - test/*.py
   commands:
-    - nosetests -e label  # [win]
-    - nosetests  # [unix]
+    - nosetests -e label -e thinning  # [win]
+    - nosetests -e thinning  # [unix]
 
 about:
   home: https://github.com/K3D-tools/chunky3d
