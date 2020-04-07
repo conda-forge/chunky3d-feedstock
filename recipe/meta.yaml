@@ -1,5 +1,5 @@
 {% set name = "chunky3d" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0099d131784e0b910b5769a2f77cd77419ba5e47f52ecbc8758331b4b7f98a0
+  sha256: f4cc1dc166d80d1a67e603d03285318a6b656bc1360ffb1b398ec57abe16bd79
 
 
 build:
@@ -39,8 +39,7 @@ test:
   source_files:
     - test/*.py
   commands:
-    - nosetests -e label -e thinning  # [win]
-    - nosetests -e thinning  # [unix]
+    - nosetests
 
 about:
   home: https://github.com/K3D-tools/chunky3d
