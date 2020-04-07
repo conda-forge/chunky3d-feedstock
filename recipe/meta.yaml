@@ -39,8 +39,7 @@ test:
   source_files:
     - test/*.py
   commands:
-    - nosetests -e label -e thinning  # [win]
-    - nosetests -e thinning  # [unix]
+    - nosetests
 
 about:
   home: https://github.com/K3D-tools/chunky3d
