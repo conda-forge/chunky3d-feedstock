@@ -34,6 +34,7 @@ test:
     - networkx
     - nose
     - pip
+    - scikit-image
     - simpleitk  # [unix]
     - vtk
   source_files:
@@ -51,7 +52,7 @@ about:
   description: |
     chunky3d provides a 3D array-like NumPy-based data structure for large 
     sparsely-populated volumes, chunky3d.Sparse, along with some algorithms for
-    processing integer masks (morhpology) or volumetric data (spacial interpolation).
+    processing integer masks (morhpology) or volumetric data (spatial interpolation).
   # TODO: create an publish documentation.
   # doc_url: https://chunky3d.readthedocs.io/
   dev_url: https://github.com/K3D-tools/chunky3d
