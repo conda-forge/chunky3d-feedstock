@@ -17,15 +17,16 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - dill
     - msgpack-numpy
     - msgpack-python
     - numba
     - psutil
+    - scikit-image
     - scipy
 
 test:
@@ -34,7 +35,6 @@ test:
     - networkx
     - nose
     - pip
-    - scikit-image
     - simpleitk  # [unix]
     - vtk
   source_files:
