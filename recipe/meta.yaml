@@ -1,5 +1,5 @@
 {% set name = "chunky3d" %}
-{% set version = "0.1.7" %}
+{% set version = "0.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7e46d603f4513512daa5f0f65bfc324a4abe42cc987d45a3a0a36e7d0d62d3a2
+  sha256: 97fd691ab5cf0c6a68c1fc517bb2bf94faad6e3b7302b3ebe3f306f2b8913d49
 
 
 build:
