@@ -1,11 +1,11 @@
-About chunky3d
-==============
+About chunky3d-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/chunky3d-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/K3D-tools/chunky3d
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/chunky3d-feedstock/blob/main/LICENSE.txt)
 
 Summary: A 3D array-like NumPy-based data structure for large sparsely-populated volumes
 
