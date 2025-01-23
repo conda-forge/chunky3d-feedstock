@@ -1,5 +1,5 @@
 {% set name = "chunky3d" %}
-{% set version = "0.1.13" %}
+{% set version = "0.1.15" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d27c88916f844b5608c9613278ea07c622e6a6980bfb59f142079b6b5d7cdf06
+  sha256: b7a6a833b9d9114c94efc2a8d105e632f17dfd74bc4df23b4039e3c943b7b3d5
 
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
